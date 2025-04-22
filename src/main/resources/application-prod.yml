@@ -1,6 +1,11 @@
 server:
   port: 8080 # 충돌 문제 시 수정
 spring:
+  # Security
+  security:
+    user:
+      name: ${SECURITY_USER}
+      password: ${SECURITY_PASSWORD}
   jpa:
     hibernate:
       #      ddl-auto: create # 배포 시는 none 또는 validate 추천
